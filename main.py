@@ -36,7 +36,7 @@ def plot1():
     plt.xlabel("$t$")
     plt.ylabel("$x_t$")
     plt.grid(True)
-    plt.savefig("btc1.png")
+    plt.savefig("btc1.png", transparent=True)
 
 
 def plot2():
@@ -47,7 +47,7 @@ def plot2():
     plt.xlabel("$t$")
     plt.ylabel("$\\log x_t - \\mu t$")
     plt.grid(True)
-    plt.savefig("btc2.png")
+    plt.savefig("btc2.png", transparent=True)
 
 
 def plot3():
@@ -58,7 +58,7 @@ def plot3():
     plt.xlabel("$t$")
     plt.ylabel("$\\log x_t - \\mu t$")
     plt.grid(True)
-    plt.savefig("btc3.png")
+    plt.savefig("btc3.png", transparent=True)
 
 
 def plot4():
@@ -76,14 +76,13 @@ def plot4():
         [-1.96 * np.sqrt(sigma2 * i) for i in range(len(log_segments[0]))],
         color="black",
         linestyle="dashed",
-        label="$\\pm 1.96\\sigma\\sqrt{t}$",
     )
     plt.title("Bitcoin Value")
     plt.xlabel("$t$")
     plt.ylabel("$\\log x_t - \\log x_0 - \\mu t$")
     plt.legend()
     plt.grid(True)
-    plt.savefig("btc4.png")
+    plt.savefig("btc4.png", transparent=True)
 
 
 plot1()
