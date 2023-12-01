@@ -34,7 +34,7 @@ def plot1():
         plt.plot(index, segment, linestyle="-")
     plt.title("Bitcoin Value")
     plt.xlabel("$t$")
-    plt.ylabel("$x_t$")
+    plt.ylabel("$x(t)$")
     plt.grid(True)
     plt.savefig("btc1.png", transparent=True)
 
@@ -45,7 +45,7 @@ def plot2():
         plt.plot(index, segment, linestyle="-")
     plt.title("Bitcoin Value")
     plt.xlabel("$t$")
-    plt.ylabel("$\\log x_t - \\mu t$")
+    plt.ylabel("$\\log x(t) - \\mu t$")
     plt.grid(True)
     plt.savefig("btc2.png", transparent=True)
 
@@ -56,7 +56,7 @@ def plot3():
         plt.plot(segment, linestyle="-")
     plt.title("Bitcoin Value")
     plt.xlabel("$t$")
-    plt.ylabel("$\\log x_t - \\mu t$")
+    plt.ylabel("$\\log x(t) - \\mu t$")
     plt.grid(True)
     plt.savefig("btc3.png", transparent=True)
 
@@ -79,7 +79,7 @@ def plot4():
     )
     plt.title("Bitcoin Value")
     plt.xlabel("$t$")
-    plt.ylabel("$\\log x_t - \\log x_0 - \\mu t$")
+    plt.ylabel("$\\log x(t) - \\log x(0) - \\mu t$")
     plt.legend()
     plt.grid(True)
     plt.savefig("btc4.png", transparent=True)
